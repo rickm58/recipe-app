@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import "./App.css";
 import RecipeCreate from "./RecipeCreate";
@@ -13,11 +14,9 @@ function App() {
     setRecipes(filteredList)
   }
   
-  /* App will display a recipe's name, cuisine, photo, ingredients, preparation instructions and action buttons (edit and delete).
-  */
+
   return (
-    // Uses multiple components that play well together
-    // Recipe data is contained in the state.
+
     <div className="App">
       <header><h1>Delicious Food Recipes</h1></header>
       <RecipeList recipes={recipes} RecipeDelete={RecipeDelete}/>
